@@ -1,9 +1,13 @@
-// import React from 'react'
+import './EmployersList.css';
+import EmployersListItem from '../EmployersListItem/EmployersList';
 
-export default function EmployersList() {
+ function EmployersList() {
   return (
-    <div>
-      {/* <h3>kgkg</h3> */}
-    </div>
+    <ul className="app-list list-group">
+      <EmployersListItem />
+      <EmployersListItem />
+      <EmployersListItem />
+    </ul>
   )
 }
+export default EmployersList

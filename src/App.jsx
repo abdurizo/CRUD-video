@@ -1,16 +1,18 @@
 import "./index.css";
 
-import { Info, SearchPanel, Filter } from './components'
+import { Info, SearchPanel, Filter, EmployersList, EmployersAddForm } from './components'
 
 function App() {
 
   return (
     <div className="container">
-      <Info /> 
+      <Info />
       <div className="search-panel">
-        <SearchPanel/>
-      <Filter/>
+        <SearchPanel />
+        <Filter />
       </div>
+      <EmployersList/>
+      <EmployersAddForm/>
     </div>
   )
 }
