@@ -23,6 +23,7 @@ function EmployersListItem({ salary, name, increase }) {
           <i className="fas fa-trash"></i>
         </button>
         <i className="fas fa-star"></i>
+        <i className="fas fa-star"></i>
       </div>
     </li>
   )
