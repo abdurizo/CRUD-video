@@ -4,6 +4,12 @@ import { Info, SearchPanel, Filter, EmployersList, EmployersAddForm } from './co
 
 function App() {
 
+  const data=[
+    { name: 'John', salary: 800, increase:true},
+    { name: 'Alex', salary: 5000, increase:false},
+    { name: 'Gloriya', salary: 1000, increase:true},
+  ]
+
   return (
     <div className="container">
       <Info />
@@ -11,7 +17,7 @@ function App() {
         <SearchPanel />
         <Filter />
       </div>
-      <EmployersList/>
+      <EmployersList data={data} />
       <EmployersAddForm/>
     </div>
   )
