@@ -1,13 +1,13 @@
 import "./index.css";
-
+import { useState } from "react";
 import { Info, SearchPanel, Filter, EmployersList, EmployersAddForm } from './components'
 
 function App() {
-
+  // const [increase, setIncrease] = useState(false);
   const data=[
-    { name: 'John', salary: 800, increase:true},
-    { name: 'Alex', salary: 5000, increase:false},
-    { name: 'Gloriya', salary: 1000, increase:true},
+    { name: 'John', salary: 800,  id:1 },
+    { name: 'Alex', salary: 5000,  id:2 },
+    { name: 'Gloriya', salary: 1000,  id:3 },
   ]
 
   return (
