@@ -1,7 +1,7 @@
 import { Component } from "react";
 import './EmployersAddForm.css'
 
-class EmployersListItem extends Component {
+class EmployersAddForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
