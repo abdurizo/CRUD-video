@@ -1,7 +1,7 @@
-import './EmployersList.css';
-import EmployersListItem from '../EmployersListItem/EmployersList';
+import './EmployeesList.css';
+import EmployeesListItem from '../EmployeesListItem/EmployeesList';
 
-function EmployersList({ data, onDelete}) {
+function EmployeesList({ data, onDelete, onToggleProp, }) {
 
   // const elements = data.map(item => {
   //   return (
@@ -12,10 +12,12 @@ function EmployersList({ data, onDelete}) {
     const { id, ...itemProps } = item;
     return (
       // <EmployersListItem salary={item.salary} name={item.name} /> или
-      <EmployersListItem
+      <EmployeesListItem
         {...itemProps}
         key={id}
         onDelete={() => onDelete(id)}
+        onToggleProp={(e) => onToggleProp(id, e.currentTarget.getAttribute('data-toggle'))}
+       
       />
     )
   })
@@ -26,4 +28,4 @@ function EmployersList({ data, onDelete}) {
     </ul>
   )
 }
-export default EmployersList
+export default EmployeesList

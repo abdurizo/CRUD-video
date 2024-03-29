@@ -1,7 +1,7 @@
 import { Component } from "react";
-import './EmployersAddForm.css'
+import './EmployeesAddForm.css'
 
-class EmployersAddForm extends Component {
+class EmployeesAddForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,6 +16,7 @@ class EmployersAddForm extends Component {
   }
   onSubmit = (e) => {
     e.preventDefault();
+    if (this.state.name.length < 3 || !this.state.salary) return;
     this.props.onAdd(this.state.name, this.state.salary);
     this.setState({
       name: '',
@@ -50,4 +51,4 @@ class EmployersAddForm extends Component {
     )
   }
 }
-export default EmployersAddForm;
+export default EmployeesAddForm;
